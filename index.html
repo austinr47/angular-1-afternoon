@@ -44,6 +44,19 @@
             Friends: 1,367
           </div>
         </li>
+        <li class="friend" ng-repeat="friend in friends">
+          <img class="profile-pic" src="{{friend.pic_square}}">
+          <h3>{{friend.name}}</h3>
+          <div class="location">
+            Location: {{friend.location.city}}, {{friends.location.state}}, {{friend.location.country}}
+          </div>
+          <div class="status">
+            Status: {{friend.status}}
+          </div>
+          <div class="num-friends">
+            Friends: {{friend.friend_count}}
+          </div>
+        </li>
       </ul>
     </div>
 
