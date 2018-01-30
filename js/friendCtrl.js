@@ -1,7 +1,7 @@
 angular.module("myApp").controller("friendCtrl", function($scope){
     $scope.friends = friends();
 
-    $scope.searchTerm = '';
+    $scope.filters = {name: '', state: ''};
 })
 
 function friends() {
